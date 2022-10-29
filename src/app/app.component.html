@@ -1,2 +1,2 @@
 <h1>Welcome to Chirpus Pizza!</h1>
-
+<p *ngFor="let menuitem of menuItems; let i = index">{{menuitem.item}} - {{menuitem.category}} - ${{menuitem.price}} </p>
