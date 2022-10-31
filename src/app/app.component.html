@@ -1,2 +1,19 @@
 <h1>Welcome to Chirpus Pizza!</h1>
-<p *ngFor="let menuitem of menuItems; let i = index">{{menuitem.item}} - {{menuitem.category}} - ${{menuitem.price}} </p>
+<!-- <div *ngFor="let menuitem of menuItems; let i = index">{{menuitem.item}} - {{menuitem.category}} - ${{menuitem.price}} </div> -->
+
+<div>
+  <table>
+    <th>Item</th>
+    <th>Category</th>
+    <th>Price</th>
+  </table>
+</div>
+<div *ngFor="let menuitem of menuItems">
+  <table>
+    <tr>
+      <td>{{ menuitem.item }}</td>
+      <td>{{ menuitem.category }}</td>
+      <td>{{ menuitem.price }}</td>
+    </tr>
+  </table>
+</div>
